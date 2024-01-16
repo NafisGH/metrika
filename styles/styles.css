@@ -1,11 +1,13 @@
-body {
+.container {
     font-family: 'Manrope', sans-serif;
     width: 1400px;
-    height: 7211px;
+    background: #FFF;
+    margin: 0 auto;
 }
 .projects {
     width: 1150px;
     margin: 0 auto;
+    margin-bottom: 150px;
 }
 h1 {
     font-size: 60px;
@@ -36,7 +38,7 @@ h1 {
 }
 
 .paragraf-about-us {
-    color: var(--Text, #121212);
+    color: #121212;
     width: 1048px;
     font-size: 45px;
     font-style: normal;
@@ -49,14 +51,12 @@ h1 {
     width: 225;
     height: 67px;
     border-radius: 5px;
-    background: var(--Accent, #AD1818);
+    background: #AD1818;
     border: none;
     color: #FFF;
     font-family: Manrope;
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: -0.6px;
     padding: 20px 40px;
     margin-top: 30px;
@@ -65,53 +65,110 @@ h1 {
     cursor: pointer;
     opacity: 0.5;
 }
-.img_project {
+.item__img {
     width: 1150px;
     height: 450px;
     flex-shrink: 0;
     margin-bottom: 15px;
 }
-.description_img {
+.item__description {
     color: #121212;
     font-family: Manrope;
     font-size: 30px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: -0.9px;
     margin-bottom: 15px;
 }
 
 .detail {
-color: var(--Accent, #AD1818);
+color: #AD1818;
 font-family: Manrope;
 font-size: 20px;
-font-style: normal;
 font-weight: 400;
-line-height: normal;
 letter-spacing: -0.6px;
+text-decoration: none;
 }
 
-.project {
+.item {
     margin-bottom: 90px;
 }
 
 .view_all_project {
+    box-sizing: border-box;
     width: 1150px;
     height: 153px;
     flex-shrink: 0;
     border-radius: 5px;
     border: 1px solid #AD1818;
     margin-bottom: 150px;
+    line-height: 150px;
 }
-.view_all_project h3 {
+.box {
+    border-radius: 5px;
+    border: 1px solid #AD1818;
+    width: 100%;
+    height: 153px;
+    line-height: 150px;
+}
+.box:hover {
+    background-color: #AD1818;
+}
+.box__view {
      color: #AD1818;
+     text-decoration: none;
+     display: block;
     text-align: center;
     font-family: Manrope;
     font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.9px;
-    margin-top: 50px;
+    
+}
+.box__view:hover {
+    color: #fff;
+}
+
+.services__subtitle {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 34px;
+}
+.services {
+    width: 100%;
+    height: 1844px;
+    background-color: #121212;
+}
+.services__container {
+    width: 1150px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+.services__img_plan, .services__img_desine, .services__img_supervision {
+   margin-bottom: 60px;
+    
+}
+.services__container img {
+    margin-bottom: 15px;
+}
+.img__description {
+    color: #FFF;
+    font-size: 30px;
+}
+.services__img_complete_set {
+    margin-bottom: 150px;
+}
+
+.apartment_project {
+    background-image: url('../resources/img/Rectangle 10.jpg');
+    width: 1400px;
+    height: 717px;
+    position: relative;
+}
+.apartment_project__box_description {
+    width: 443px;
+    position: absolute;
+    left: 125px;
+    bottom: 60px;
+}
+.apartment_project__description {
+    color: #FFF;
+    font-size: 30px;
 }
