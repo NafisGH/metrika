@@ -1,14 +1,49 @@
+html {
+    scroll-behavior: smooth;
+}
 .container {
     font-family: 'Manrope', sans-serif;
     width: 1400px;
     background: #FFF;
     margin: 0 auto;
 }
+.header {
+    width: 1150px;
+    margin: 0 auto;
+
+}
+
+.logo__img {
+    width: 126.889px;
+    height: 21.42px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 33px;
+    margin-bottom: 73px;
+}
+
+
+a {
+    margin-right: 60px;
+    text-decoration: none;
+    color: #121212;
+}
+a:last-child {
+    margin-right: 0px;
+}
+a:hover {
+    text-decoration: underline;
+}
+
 .projects {
     width: 1150px;
     margin: 0 auto;
     margin-bottom: 150px;
 }
+
 h1 {
     font-size: 60px;
     font-style: normal;
@@ -158,7 +193,9 @@ text-decoration: none;
 
 .apartment_project {
     background-image: url('../resources/img/Rectangle 10.jpg');
-    width: 1400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
     height: 717px;
     position: relative;
 }
@@ -171,4 +208,39 @@ text-decoration: none;
 .apartment_project__description {
     color: #FFF;
     font-size: 30px;
+}
+
+.contacts {
+    width: 1150px;
+    height: 553px;
+    margin: 0 auto;
+    padding-top: 150px;
+
+}
+.contacts__text {
+    color: #121212;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+.contacts__wrapper::before {
+    content: '';
+    display: block;
+    background-image: url('../resources/img/logo-phone.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 6px;
+}
+.contacts__number {
+    color: #121212;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+.contacts__email {
+    color: #121212;
+    font-size: 60px;
+    line-height: 60px;
 }
