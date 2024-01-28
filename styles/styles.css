@@ -1,32 +1,28 @@
+@import "./about-us.css";
+@import "./section_projects.css";
+
 html {
     scroll-behavior: smooth;
 }
 body{
     font-family: 'Manrope', sans-serif;
-}
-.container {
-    width: 1400px;
     background: #FFF;
-    margin: 0 auto;
 }
+
 .header {
     width: 1150px;
     margin: 0 auto;
 
-}
-
-.logo__img {
-    width: 126.889px;
-    height: 21.42px;
-}
-
-.nav-container {
     display: flex;
     justify-content: space-between;
     margin-top: 33px;
     margin-bottom: 73px;
 }
 
+.logo__img {
+    width: 126.889px;
+    height: 21.42px;
+}
 
 .nav-link a {
     margin-right: 60px;
@@ -40,90 +36,140 @@ a:hover {
     text-decoration: underline;
 }
 
-.projects {
+/* main */
+main {
+    border: 1px solid green;
+}
+/* section  main__about-us_container */
+.about-us_container {
     width: 1150px;
     margin: 0 auto;
-    margin-bottom: 150px;
+    margin-bottom: 120px;
+    border: 1px solid red;
 }
-
 h1 {
     font-size: 60px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 60px;
-    letter-spacing: -1.8px;
     margin-bottom: 30px;
 }
-.img-one {
-    width: 1150px;
+.img-about-us {
     height: 500px;
-    flex-shrink: 0;
     margin-bottom: 150px;
 }
-.about-us {
-    margin-bottom: 150px;
-}
-.subtitle {
+.subtitle_about-us {
     color: #121212;
     font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.54px;
-    text-transform: uppercase;
     margin-bottom: 30px;
 }
-
 .paragraf-about-us {
     color: #121212;
-    width: 1048px;
     font-size: 45px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -1.35px;
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
 .btn-services {
-    width: 225;
-    height: 67px;
     border-radius: 5px;
     background: #AD1818;
     border: none;
     color: #FFF;
-    font-family: Manrope;
     font-size: 20px;
-    font-weight: 400;
-    letter-spacing: -0.6px;
     padding: 20px 40px;
-    margin-top: 30px;
 }
 .btn-services:hover {
     cursor: pointer;
     opacity: 0.5;
 }
-.item__img {
+
+@media (max-width: 960px) {
+    .about-us_container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    h1 {
+        width: 830px;
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .img-about-us {
+        width: 100%;
+    }
+    .paragraf-about-us {
+        width: 690px;
+        font-size: 35px;
+        letter-spacing: -1.05px;
+        line-height: normal;
+    }
+}
+@media (max-width: 375px) {
+    .about-us_container {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-bottom: 80px;
+    }
+    h1 {
+        width: 100%;
+        font-size: 30px;
+        line-height: 31px;
+        margin-bottom: 25px;
+    }
+    .img-about-us {
+        height: 304px;
+        margin-bottom: 80px;
+    }
+    .subtitle_about-us {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .paragraf-about-us {
+        width: 100%;
+        font-size: 22px;
+        letter-spacing: -0.66px;
+    }
+    .btn-services {
+        border-radius: 5px;
+        background: #AD1818;
+        border: none;
+        color: #FFF;
+        font-size: 16px;
+        padding: 15px 30px;
+    }
+}
+/* section  main__projects */
+.main__projects_container {
     width: 1150px;
+    margin: 0 auto;
+    border: 1px solid blue;
+}
+.subtitle_projects {
+    color: #121212;
+    font-size: 18px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.54px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.item__img {
+    width: 100%;
     height: 450px;
     flex-shrink: 0;
     margin-bottom: 15px;
 }
 .item__description {
     color: #121212;
-    font-family: Manrope;
     font-size: 30px;
     font-weight: 400;
     letter-spacing: -0.9px;
     margin-bottom: 15px;
 }
-
 .detail {
-color: #AD1818;
-font-family: Manrope;
-font-size: 20px;
-font-weight: 400;
-letter-spacing: -0.6px;
-text-decoration: none;
+    color: #AD1818;
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+    text-decoration: none;
 }
 
 .item {
@@ -140,17 +186,17 @@ text-decoration: none;
     margin-bottom: 150px;
     line-height: 150px;
 }
-.box {
+.btn_view-all-projects {
     border-radius: 5px;
     border: 1px solid #AD1818;
     width: 100%;
     height: 153px;
     line-height: 150px;
 }
-.box:hover {
+.btn_view-all-projects:hover {
     background-color: #AD1818;
 }
-.box__view {
+.btn_view-all-projects__inner {
      color: #AD1818;
      text-decoration: none;
      display: block;
@@ -159,10 +205,41 @@ text-decoration: none;
     font-size: 30px;
     
 }
-.box__view:hover {
+.btn_view-all-projects__inner:hover {
     color: #fff;
 }
 
+@media (max-width: 960px) {
+    .main__projects_container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .item__img {
+        width: 930px;
+    }
+    .item__description {
+        font-size: 25px;
+        letter-spacing: -0.75px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 960px) {
+    .main__projects_container {
+        width: 350px;
+    }
+    .item__img {
+        width: 350px;
+        height: 250px;
+    }
+    .item__description {
+        font-size: 18px;
+        letter-spacing: -0.54px;
+        margin-bottom: 10px;
+    }
+}
+
+/* services */
 .services__subtitle {
     font-size: 18px;
     color: #FFFFFF;
@@ -280,3 +357,4 @@ footer {
     text-align: center;
     margin-bottom: 30px;
 }
+

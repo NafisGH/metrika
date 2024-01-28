@@ -1,0 +1,127 @@
+.about-us_container {
+    width: 1150px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    border: 1px solid red;
+}
+h1 {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+.img-about-us {
+    height: 500px;
+    margin-bottom: 150px;
+    background-image: url("../resources/img/img-about-us.png");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.img-about-us p {
+    width: 430px;
+    color: #FFF;
+    font-size: 20px;
+    letter-spacing: -0.6px;
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+}
+.subtitle_about-us {
+    color: #121212;
+    font-size: 18px;
+    margin-bottom: 30px;
+   
+}
+.paragraf-about-us {
+    color: #121212;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+.btn-services {
+    border-radius: 5px;
+    background: #AD1818;
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    padding: 20px 40px;
+}
+.btn-services:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+/* media about-us_container ------------------------------------- */
+@media (max-width: 960px) {
+    .about-us_container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    h1 {
+        width: 830px;
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .img-about-us {
+        width: 100%;
+    }
+    .img-about-us p {
+        bottom: 30px;
+    }
+    .paragraf-about-us {
+        width: 690px;
+        font-size: 35px;
+        letter-spacing: -1.05px;
+        line-height: normal;
+    }
+}
+@media (max-width: 768px) {
+    h1 {
+        width: 100%;
+    }
+    .paragraf-about-us {
+        width: 100%;
+    }
+}
+@media (max-width: 375px) {
+    .about-us_container {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-bottom: 80px;
+    }
+    h1 {
+        width: 100%;
+        font-size: 30px;
+        line-height: 31px;
+        margin-bottom: 25px;
+    }
+    .img-about-us {
+        height: 304px;
+        margin-bottom: 80px;
+    }
+    .img-about-us p {
+        width: 312px;
+        font-size: 16px;
+        letter-spacing: -0.48px;
+        left: 15px;
+        bottom: 15px;
+    }
+    .subtitle_about-us {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .paragraf-about-us {
+        width: 100%;
+        font-size: 22px;
+        letter-spacing: -0.66px;
+    }
+    .btn-services {
+        border-radius: 5px;
+        background: #AD1818;
+        border: none;
+        color: #FFF;
+        font-size: 16px;
+        padding: 15px 30px;
+    }
+}
