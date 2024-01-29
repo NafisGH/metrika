@@ -1,7 +1,7 @@
 .main__projects_container {
     width: 1150px;
     margin: 0 auto;
-    border: 1px solid blue;
+    margin-bottom: 150px;
 }
 .subtitle_projects {
     color: #121212;
