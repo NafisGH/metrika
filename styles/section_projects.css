@@ -87,7 +87,7 @@
         margin-bottom: 100px;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     .main__projects_container {
         padding-left: 12px;
         padding-right: 12px;

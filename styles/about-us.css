@@ -82,7 +82,7 @@ h1 {
         width: 100%;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     .about-us_container {
         width: 100%;
         padding-left: 12px;
