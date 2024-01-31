@@ -1,6 +1,7 @@
 .main__gallery-projects {
     max-width: 1400px;
     margin: 0 auto;
+    margin-bottom: 150px;
 }
 .gallery {
     position: relative;

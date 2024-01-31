@@ -3,6 +3,7 @@
 @import "./services.css";
 @import "./feedback.css";
 @import "./gallery-projects.css";
+@import "./contacts.css";
 
 html {
     scroll-behavior: smooth;
@@ -37,7 +38,7 @@ a:hover {
 }
 
 /* main */
-.apartment_project {
+/* .apartment_project {
     background-image: url('../resources/img/Rectangle 10.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,62 +55,40 @@ a:hover {
 .apartment_project__description {
     color: #FFF;
     font-size: 30px;
-}
-.contacts {
-    width: 1150px;
-    height: 553px;
-    margin: 0 auto;
-    padding-top: 150px;
-}
-.contacts__text {
-    color: #121212;
-    font-size: 18px;
-    margin-bottom: 32px;
-}
-.contacts__wrapper::before {
-    content: '';
-    display: block;
-    background-image: url('../resources/img/logo-phone.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    width: 24px;
-    height: 24px;
-    margin-bottom: 6px;
-}
-.contacts__number {
-    color: #121212;
-    font-size: 60px;
-    line-height: 60px;
-    margin-bottom: 30px;
-}
-.contacts__number a,
-.contacts__email a {
-    text-decoration: none;
-}
-.contacts__email {
-    color: #121212;
-    font-size: 60px;
-    line-height: 60px;
-}
+} */
+
+
+
+
 
 footer {
+    max-width: 1400px;
+    margin: 0 auto;
     background: #121212;
-    height: 229px;
+    /* height: 229px; */
 }
-.nav-footer {
+.footer__inner {
     display: flex;
-    justify-content: center;  
+    justify-content: center;
 }
-.nav-footer p {
+.footer__nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;  
+}
+.footer__nav a {
+    display: block;
     color: #FFF;
-    margin-top: 60px;
-    margin-bottom: 87px;
+    font-size: 18px;
+    text-decoration: none;
 }
-.nav-footer p:not(:last-child) {
+.footer__nav a:hover {
+   opacity: 0.5;
+}
+.footer__nav a:not(:last-child) {
     margin-right: 53px;
 }
-.nav-footer p:first-child{
+.footer__nav_active{
     opacity: 0.5;
 }
 .nav-footer_description {
@@ -117,6 +96,31 @@ footer {
     font-size: 20px;
     opacity: 0.5;
     text-align: center;
-    margin-bottom: 30px;
+    margin-top: 87px;
+    padding-bottom: 30px;
 }
+@media (max-width: 960px) {
+    footer {
+        max-width: 100%;
+
+    }
+}
+@media (max-width: 425px) {
+    .footer__nav {
+        padding-top: 30px;  
+    }
+    .footer__nav a {
+        font-size: 12px;
+    }
+    .footer__nav a:not(:last-child) {
+        margin-right: 30px;
+    }
+    .nav-footer_description {
+        font-size: 13px;
+        margin-top: 41px;
+        padding-bottom: 26px;
+    }
+}
+
+
 
