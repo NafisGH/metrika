@@ -4,6 +4,7 @@
 @import "./feedback.css";
 @import "./gallery-projects.css";
 @import "./contacts.css";
+@import "./header.css";
 
 html {
     scroll-behavior: smooth;
@@ -11,61 +12,16 @@ html {
 body{
     font-family: 'Manrope', sans-serif;
     background: #FFF;
-}
-.header {
-    width: 1150px;
-    margin: 0 auto;
-
-    display: flex;
-    justify-content: space-between;
-    margin-top: 33px;
-    margin-bottom: 73px;
-}
-.logo__img {
-    width: 126.889px;
-    height: 21.42px;
-}
-.nav-link a {
-    margin-right: 60px;
-    text-decoration: none;
-    color: #121212;
-}
-a:last-child {
-    margin-right: 0px;
-}
-a:hover {
-    text-decoration: underline;
+  
+  
 }
 
-/* main */
-/* .apartment_project {
-    background-image: url('../resources/img/Rectangle 10.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    height: 717px;
-    position: relative;
-}
-.apartment_project__box_description {
-    width: 443px;
-    position: absolute;
-    left: 125px;
-    bottom: 60px;
-}
-.apartment_project__description {
-    color: #FFF;
-    font-size: 30px;
-} */
 
-
-
-
-
+_____ */
 footer {
     max-width: 1400px;
     margin: 0 auto;
     background: #121212;
-    /* height: 229px; */
 }
 .footer__inner {
     display: flex;

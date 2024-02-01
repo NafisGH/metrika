@@ -1,5 +1,5 @@
 .main__projects_container {
-    width: 1150px;
+    max-width: 1400px;
     margin: 0 auto;
     margin-bottom: 150px;
 }
@@ -33,11 +33,9 @@
     letter-spacing: -0.6px;
     text-decoration: none;
 }
-
 .item {
     margin-bottom: 90px;
 }
-
 .view_all_project {
     box-sizing: border-box;
     width: 1150px;

@@ -5,6 +5,7 @@
     padding-right: 125px;
     margin-bottom: 150px;
 }
+
 .contacts__title {
     color: #121212;
     font-size: 18px;
@@ -72,7 +73,6 @@
     .column_number {
         margin-right: 114px;
     }
-
 }
 @media (max-width: 425px) {
     .main__contacts_container {
