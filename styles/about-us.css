@@ -1,5 +1,5 @@
 .about-us_container {
-    width: 1150px;
+    max-width: 1400px;
     margin: 0 auto;
     margin-bottom: 120px;
 }
@@ -30,7 +30,6 @@ h1 {
     color: #121212;
     font-size: 18px;
     margin-bottom: 30px;
-   
 }
 .paragraf-about-us {
     color: #121212;
@@ -82,7 +81,7 @@ h1 {
         width: 100%;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     .about-us_container {
         width: 100%;
         padding-left: 12px;

@@ -1,0 +1,105 @@
+.main__contacts_container {
+    width: 1400px;
+    margin: 0 auto;
+    padding-left: 125px;
+    padding-right: 125px;
+    margin-bottom: 150px;
+}
+
+.contacts__title {
+    color: #121212;
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+.contacts__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.contacts__number:before {
+    content: '';
+    display: block;
+    background-image: url('../resources/img/logo-phone.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 26px;
+}
+.column_number {
+    margin-right: 104px;
+}
+.contacts__number a {
+    color: #121212;
+    text-decoration: none;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+.contacts__email:before {
+    content: '';
+    display: block;
+    background-image: url('../resources/img/logo-email.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 26px;
+}
+.column_email {
+    border-bottom: 2px solid #121212;
+}
+.contacts__email a {
+    color: #121212;
+    font-size: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    opacity: 0.5;
+}
+@media (max-width: 960px) {
+    .main__contacts_container {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 120px;
+    }
+    .contacts__number a,
+    .contacts__email a {
+        font-size: 45px;
+        line-height: 60px;
+        letter-spacing: -1.35px;
+    }
+    .column_number {
+        margin-right: 114px;
+    }
+}
+@media (max-width: 425px) {
+    .main__contacts_container {
+        padding-left: 13px;
+        padding-right: 13px;
+        margin-bottom: 80px;
+    }
+    .contacts__title {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .contacts__email:before,
+    .contacts__email:before {
+        width: 18px;
+        height: 18px;
+        margin-bottom: 20px;
+    }
+    .contacts__number a,
+    .contacts__email a {
+        font-size: 30px;
+        line-height: 45px;
+        letter-spacing: -1.05px;
+    }
+    .contacts__email a {
+        border-bottom: none;
+    }
+    .contacts__row {
+        row-gap: 20px;
+    }
+}

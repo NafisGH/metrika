@@ -1,5 +1,10 @@
 @import "./about-us.css";
 @import "./section_projects.css";
+@import "./services.css";
+@import "./feedback.css";
+@import "./gallery-projects.css";
+@import "./contacts.css";
+@import "./header.css";
 
 html {
     scroll-behavior: smooth;
@@ -7,199 +12,71 @@ html {
 body{
     font-family: 'Manrope', sans-serif;
     background: #FFF;
+  
+  
 }
 
-.header {
-    width: 1150px;
-    margin: 0 auto;
 
-    display: flex;
-    justify-content: space-between;
-    margin-top: 33px;
-    margin-bottom: 73px;
-}
-
-.logo__img {
-    width: 126.889px;
-    height: 21.42px;
-}
-
-.nav-link a {
-    margin-right: 60px;
-    text-decoration: none;
-    color: #121212;
-}
-a:last-child {
-    margin-right: 0px;
-}
-a:hover {
-    text-decoration: underline;
-}
-
-/* main */
-main {
-    border: 1px solid green;
-}
-/* services */
-
-.main__services_container {
+_____ */
+footer {
     max-width: 1400px;
     margin: 0 auto;
-    background-color: #121212;
+    background: #121212;
 }
-.services__subtitle {
-    color: #FFF;
-    font-size: 18px;
-    letter-spacing: -0.54px;
-    padding-top: 150px;
-    padding-bottom: 30px;
-}
-.services_inner {
-    width: 1150px;
-    margin: 0 auto;
-   /* padding-bottom: 104px; */
-}
-.services_inner_wrapper {
+.footer__inner {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 80px;
-    padding-bottom: 104px;
+    justify-content: center;
 }
-.services__img img {
-    max-width: 100%;
-    height: 388px;
-    position: relative;
-    margin-bottom: 25px;
+.footer__nav {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;  
 }
-.services__img {
-    width: 569px;
-    width: calc(50% -5px);
-    /* height: 388px; */
-    position: relative;
-}
-.services_price {
-    padding: 5px 20px;
-    border-radius: 5px;
-    background: #AD1818;
-    position: absolute;
-    color: #FFF;
-    font-size: 22px;
-    letter-spacing: -0.66px;
-    top: 31px;
-    left: 30px;
-}
-
-
-.img__description {
-    color: #FFF;
-    font-size: 30px;
-    letter-spacing: -0.9px;
-}
-.btn_order-service {
-    background: #AD1818;
-    padding: 56px 0;
-    width: 100%;
-    font-size: 30px;
-    letter-spacing: -0.9px;
-    line-height: normal;
-    color: #FFF;
-    border-radius: 5px;
-    margin-bottom: 150px;
-}
-.btn_order-service:hover {
-    cursor: pointer;
-    color: #AD1818;
-    background: none;
-    border: 1px solid #AD1818;
-}
-
-.apartment_project {
-    background-image: url('../resources/img/Rectangle 10.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    height: 717px;
-    position: relative;
-}
-.apartment_project__box_description {
-    width: 443px;
-    position: absolute;
-    left: 125px;
-    bottom: 60px;
-}
-.apartment_project__description {
-    color: #FFF;
-    font-size: 30px;
-}
-
-.contacts {
-    width: 1150px;
-    height: 553px;
-    margin: 0 auto;
-    padding-top: 150px;
-
-}
-.contacts__text {
-    color: #121212;
-    font-size: 18px;
-    margin-bottom: 32px;
-}
-.contacts__wrapper::before {
-    content: '';
+.footer__nav a {
     display: block;
-    background-image: url('../resources/img/logo-phone.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    width: 24px;
-    height: 24px;
-    margin-bottom: 6px;
-}
-.contacts__number {
-    color: #121212;
-    font-size: 60px;
-    line-height: 60px;
-    margin-bottom: 30px;
-}
-.contacts__number a,
-.contacts__email a {
+    color: #FFF;
+    font-size: 18px;
     text-decoration: none;
 }
-.contacts__email {
-    color: #121212;
-    font-size: 60px;
-    line-height: 60px;
+.footer__nav a:hover {
+   opacity: 0.5;
 }
-
-footer {
-    background: #121212;
-    height: 229px;
-    
-}
-
-.nav-footer {
-    display: flex;
-    justify-content: center;  
-}
-.nav-footer p {
-    color: #FFF;
-    margin-top: 60px;
-    margin-bottom: 87px;
-}
-.nav-footer p:not(:last-child) {
+.footer__nav a:not(:last-child) {
     margin-right: 53px;
 }
-.nav-footer p:first-child{
+.footer__nav_active{
     opacity: 0.5;
-
 }
-
 .nav-footer_description {
     color: #FFF;
     font-size: 20px;
     opacity: 0.5;
     text-align: center;
-    margin-bottom: 30px;
+    margin-top: 87px;
+    padding-bottom: 30px;
 }
+@media (max-width: 960px) {
+    footer {
+        max-width: 100%;
+
+    }
+}
+@media (max-width: 425px) {
+    .footer__nav {
+        padding-top: 30px;  
+    }
+    .footer__nav a {
+        font-size: 12px;
+    }
+    .footer__nav a:not(:last-child) {
+        margin-right: 30px;
+    }
+    .nav-footer_description {
+        font-size: 13px;
+        margin-top: 41px;
+        padding-bottom: 26px;
+    }
+}
+
+
 
