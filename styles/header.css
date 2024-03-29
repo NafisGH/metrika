@@ -1,19 +1,22 @@
 .body_fixed {
  overflow: hidden;
 }
-.header {
+.header__container {
     max-width: 1400px;
     margin: 0 auto;
+    padding-left: 125px;
+    padding-right: 125px;
+    margin-bottom: 120px;
     margin-top: 30px;
     margin-bottom: 73px;
 }
 
-.header-inner {
-    position: relative;
+.header__content {
+    /* position: relative; */
     display: flex;
     justify-content: space-between;
 }
-.logo__img {
+.header__logo-img {
     width: 126.889px;
     height: 21.42px;
 }
@@ -87,15 +90,19 @@ a:hover {
     background-color: #fff;
     transition: transform 0.3s ease; 
     transform: translateX(100%); 
+    
 }
 
 .burger_open .burger__content {
     transform: translateX(0); 
+    background-image: url();
+}
+.logo__img-burger {
+    margin-bottom: 50px;
 }
 
-
 @media (max-width: 959px) {
-    .container {
+    .header__container {
         max-width: 100%;
         padding-left: 15px;
         padding-right: 15px;
@@ -112,6 +119,8 @@ a:hover {
         height: 50px;
         cursor: pointer;
     }
+
+   
     .burger-btn_open {
         position: absolute;
         right: 15px;
@@ -137,11 +146,8 @@ a:hover {
         height: 612px;
         background-color: #fff;
     }
-    .burger__content-wrapper {
-        margin-top: 80px;
-        margin-left: 30px;
-    }
-    .logo__img-burger {
+   
+    .header__logo-img-burger {
         margin-bottom: 50px;
     }
     .burger-btn_open {
@@ -196,8 +202,9 @@ a:hover {
     .burger__content-wrapper {
         margin-top: 80px;
         margin-left: 30px;
+        position: relative; /* Добавлено */
     }
-    .logo__img-burger {
+    .header__logo-img-burger {
         margin-bottom: 50px;
     }
     .burger-btn_open {

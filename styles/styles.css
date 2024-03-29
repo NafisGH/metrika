@@ -1,20 +1,26 @@
 @import "./about-us.css";
-@import "./section_projects.css";
+@import "./projects.css";
 @import "./services.css";
 @import "./feedback.css";
-@import "./gallery-projects.css";
+@import "./gallery.css";
 @import "./contacts.css";
 @import "./header.css";
 
+* {
+    box-sizing: border-box;
+}
 html {
     scroll-behavior: smooth;
 }
-body{
+body {
     font-family: 'Manrope', sans-serif;
     background: #FFF;
+    border: 1px solid black;
 }
+
+
 footer {
-    max-width: 1400px;
+    max-width: 100%;
     margin: 0 auto;
     background: #121212;
 }
@@ -42,7 +48,7 @@ footer {
 .footer__nav_active{
     opacity: 0.5;
 }
-.nav-footer_description {
+.footer__description {
     color: #FFF;
     font-size: 20px;
     opacity: 0.5;
@@ -66,7 +72,7 @@ footer {
     .footer__nav a:not(:last-child) {
         margin-right: 30px;
     }
-    .nav-footer_description {
+    .footer__description {
         font-size: 13px;
         margin-top: 41px;
         padding-bottom: 26px;

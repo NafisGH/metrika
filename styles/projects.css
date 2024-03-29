@@ -1,9 +1,13 @@
-.main__projects_container {
+.projects {
     max-width: 1400px;
     margin: 0 auto;
+    padding-left: 125px;
+    padding-right: 125px;
+    margin-bottom: 120px;
+    box-sizing: border-box;
     margin-bottom: 150px;
 }
-.subtitle_projects {
+.projects__subtitle {
     color: #121212;
     font-size: 18px;
     font-style: normal;
@@ -12,20 +16,20 @@
     text-transform: uppercase;
     margin-bottom: 30px;
 }
-.item__img {
+.projects__item-img {
     width: 100%;
     height: 450px;
     flex-shrink: 0;
     margin-bottom: 15px;
 }
-.item__description {
+.projects__item-description {
     color: #121212;
     font-size: 30px;
     font-weight: 400;
     letter-spacing: -0.9px;
     margin-bottom: 15px;
 }
-.detail {
+.projects__detail {
     color: #AD1818;
     font-family: Manrope;
     font-size: 20px;
@@ -33,7 +37,7 @@
     letter-spacing: -0.6px;
     text-decoration: none;
 }
-.item {
+.projects__item {
     margin-bottom: 90px;
 }
 .view_all_project {
@@ -46,7 +50,7 @@
     margin-bottom: 150px;
     line-height: 150px;
 }
-.btn_view-all-projects {
+.projects__view-all-btn {
     padding: 56px 0;
     width: 100%;
     font-size: 30px;
@@ -57,51 +61,58 @@
     border-radius: 5px;
     border: 1px solid #AD1818;
 }
-.btn_view-all-projects:hover {
+.projects__view-all-btn:hover {
     background: #AD1818;
     cursor: pointer;
     color: #FFF;
 }
-/* media main__projects_container ------------------------------------- */
+/* media projects ------------------------------------- */
+@media (max-width: 1200px) {
+    .projects {
+        width: 100%;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+}
 @media (max-width: 960px) {
-    .main__projects_container {
+    .projects {
         width: 100%;
         padding-left: 15px;
         padding-right: 15px;
         margin-bottom: 100px;
     }
-    .item {
+    .projects__item {
         margin-bottom: 80px;
     }
-    .item__img {
+    .projects__item-img {
         width: 100%;
     }
-    .item__description {
+    .projects__item-description {
         font-size: 25px;
         letter-spacing: -0.75px;
         margin-bottom: 10px;
     }
-    .last-item {
+    .projects__item_last-item {
         margin-bottom: 100px;
     }
 }
 @media (max-width: 425px) {
-    .main__projects_container {
+    .projects {
         padding-left: 12px;
         padding-right: 12px;
         margin-bottom: 100px;
     }
-    .item {
+    .projects__item {
         margin-bottom: 49px;
     }
-    .last-item {
+    .projects__item_last-item {
         margin-bottom: 60px;
     }
-    .item__img {
+    .projects__item-img {
         height: 250px;
         margin-bottom: 20px;
     }
-    .item__description {
+    .projects__item-description {
         font-size: 18px;
         letter-spacing: -0.54px;
         margin-bottom: 10px;
