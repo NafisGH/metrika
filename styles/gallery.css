@@ -7,11 +7,11 @@
     position: relative;
 }
 .gallery__title {
+    position: absolute;
     color: #FFF;
     font-size: 22px;
     letter-spacing: -0.66px;
     text-transform: uppercase;
-    position: absolute;
     top: 67px;
     left: 124px;
     z-index: 100;
@@ -19,10 +19,12 @@
 
 .gallery__slides {
     height: 717px;
-    position: relative;
+    /* position: relative; */
 }
 .gallery__slide {
     position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     width: 100%;
@@ -33,55 +35,50 @@
     opacity: 1;
 }
 .gallery__slide-description {
+    position: absolute;
     width: 443px;
     font-size: 30px;
     color: #FFF;
-    position: absolute;
-    top: 575px;
-    left: 125px;
+    bottom: 60px;
+    left: 115px;
+}
+.gallery__wrapper-slide-img {
+    width: 100%;
+    height: 100%;
 }
 .gallery__slide-img {
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat;
-}
-.apartment_img {
-    background-image: url("../resources/img/apartment.png");
-}
-.living-room_img {
-    background-image: url("../resources/img/living-room.png");
-}
-.kitchen-living-room_img {
-    background-image: url("../resources/img/kitchen-living-room.png");
-}
-.kichen-scandinavian_img {
-    background-image: url("../resources/img/kichen-scandinavian.png");
 }
 
 .gallery__controls-wrapper {
     position: absolute;
-    bottom: 162px;
-    left: 125px;
-    
+    bottom: 160px;
+    left: 115px;
 }
 .gallery__control-prev,
 .gallery__control-next {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 50px;
     cursor: pointer;
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     .gallery__container {
         width: 100%;
     }
-}
+} */
 
 @media (max-width: 960px) {
+    .gallery__container {
+        width: 100%;
+        margin-bottom: 120px;
+    }
     .gallery__slides {
         height: 536px;
+    }
+    .gallery__slide-img {
+        /* height: 100%; */
     }
     .gallery__title {
         font-size: 20px;
@@ -89,44 +86,62 @@
         top: 80px;
         left: 50px;
     }
+
+    
     .gallery__controls-wrapper {
-        position: absolute;
-        bottom: 152px;
+        bottom: 150px;
         left: 50px;
     }
     .gallery__slide-description {
         width: 377px;
         font-size: 25px;
-        top: 388px;
+        bottom: 80px;
+        left: 50px;
+    }
+}
+@media (max-width: 768px) {
+    .gallery__container{
+        margin-bottom: 120px;
+    }
+    .gallery__controls-wrapper {
+        bottom: 150px;
+        left: 50px;
+    }
+    .gallery__slide-description {
+        width: 377px;
+        font-size: 25px;
+        bottom: 80px;
         left: 50px;
     }
 }
 @media (max-width: 425px) {
-    .gallery__slides {
-        height: 408px;
-    }
+    
     .gallery__title {
         font-size: 14px;
         letter-spacing: -0.42px;
-        top: 61px;
+        top: 25px;
         left: 12px;
     }
+
+    .gallery__slides {
+        height: 408px;
+    }
     .gallery__controls-wrapper {
-        position: absolute;
-        left: 0px;
-        bottom: 50%;
+        /* bottom: 150px; */
+        /* left: 50px; */
         width: 100%;
     }
     .gallery__controls {
         display: flex;
         justify-content: space-between;
-        padding-left: 13px;
-        padding-right: 13px;
-     }
+        margin-right: 100px;
+    }
     .gallery__slide-description {
-        width: 287px;
-        font-size: 19px;
-        top: 296px;
+        width: 377px;
+        font-size: 25px;
+        bottom: 60px;
         left: 13px;
     }
+    
+   
 }

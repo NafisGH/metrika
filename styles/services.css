@@ -21,17 +21,24 @@
     row-gap: 145px;
     margin-bottom: 170px;
 }
-
-.services__img {
+.services__img-block {
+    position: relative;
     width: calc(50% - 5px);
     height: 388px;
-    position: relative;
 }
-.services__img img {
+.services__wrapper-img {
+    /* max-width: 569px; */
+    /* max-height: 388px; */
+    width: 100%;
+    height: 100%;
+    margin-bottom: 25px;
+}
+
+ .services__img {
     width: 100%;
     height: 100%;
     position: relative;
-    margin-bottom: 25px;
+    
 }
 .services__price {
     padding: 5px 20px;
@@ -110,11 +117,11 @@
         padding-top: 80px;
         padding-bottom: 20px;
     }
-    .services__img {
+    .services__img-block {
         width: 100%;
         height: 240px;
     }
-    .services__img img {
+    .services__wrapper-img {
         margin-bottom: 10px;
     }
     .services__price {
