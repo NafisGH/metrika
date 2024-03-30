@@ -1,0 +1,28 @@
+h1 {
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 30px;
+  max-width: 986px;
+}
+
+.hero__wrapper-img {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 150px;
+}
+.hero__img {
+  width: 100%;
+  display: block;
+}
+.hero__wrapper-img p {
+  position: absolute;
+  width: 431px;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.3px;
+  color: #fff;
+  left: 42px;
+  bottom: 40px;
+  z-index: 5;
+  line-height: 27px;
+}

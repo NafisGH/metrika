@@ -1,123 +1,117 @@
-.projects {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding-left: 125px;
-    padding-right: 125px;
-    margin-bottom: 120px;
-    box-sizing: border-box;
-    margin-bottom: 150px;
+.projects__inner {
+  padding-bottom: 150px;
 }
 .projects__subtitle {
-    color: #121212;
-    font-size: 18px;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: -0.54px;
-    text-transform: uppercase;
-    margin-bottom: 30px;
+  color: #121212;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.54px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 .projects__wrapper-item-img {
-    max-height: 450px;
-    margin-bottom: 15px;
+  max-height: 450px;
+  margin-bottom: 15px;
 }
 .projects__item-img {
-    width: 100%;
-    flex-shrink: 0;
+  width: 100%;
+  flex-shrink: 0;
 }
 .projects__item-description {
-    color: #121212;
-    font-size: 30px;
-    font-weight: 400;
-    letter-spacing: -0.9px;
-    margin-bottom: 15px;
+  color: #121212;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: -0.9px;
+  margin-bottom: 15px;
 }
 .projects__detail {
-    color: #AD1818;
-    font-family: Manrope;
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: -0.6px;
-    text-decoration: none;
+  color: #ad1818;
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.6px;
+  text-decoration: none;
 }
 .projects__item {
-    margin-bottom: 90px;
+  margin-bottom: 90px;
 }
 .view_all_project {
-    box-sizing: border-box;
-    width: 1150px;
-    height: 153px;
-    flex-shrink: 0;
-    border-radius: 5px;
-    border: 1px solid #AD1818;
-    margin-bottom: 150px;
-    line-height: 150px;
+  box-sizing: border-box;
+  width: 1150px;
+  height: 153px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #ad1818;
+  margin-bottom: 150px;
+  line-height: 150px;
 }
 .projects__view-all-btn {
-    padding: 56px 0;
-    width: 100%;
-    font-size: 30px;
-    letter-spacing: -0.9px;
-    line-height: normal;
-    background: none;
-    color: #AD1818;
-    border-radius: 5px;
-    border: 1px solid #AD1818;
+  padding: 56px 0;
+  width: 100%;
+  font-size: 30px;
+  letter-spacing: -0.9px;
+  line-height: normal;
+  background: none;
+  color: #ad1818;
+  border-radius: 5px;
+  border: 1px solid #ad1818;
 }
 .projects__view-all-btn:hover {
-    background: #AD1818;
-    cursor: pointer;
-    color: #FFF;
+  background: #ad1818;
+  cursor: pointer;
+  color: #fff;
 }
 /* media projects ------------------------------------- */
 @media (max-width: 1200px) {
-    .projects {
-        width: 100%;
-        padding-left: 90px;
-        padding-right: 90px;
-    }
+  .projects {
+    width: 100%;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
 }
 @media (max-width: 960px) {
-    .projects {
-        width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-bottom: 100px;
-    }
-    .projects__item {
-        margin-bottom: 80px;
-    }
-    .projects__item-img {
-        width: 100%;
-    }
-    .projects__item-description {
-        font-size: 25px;
-        letter-spacing: -0.75px;
-        margin-bottom: 10px;
-    }
-    .projects__item_last-item {
-        margin-bottom: 100px;
-    }
+  .projects {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 100px;
+  }
+  .projects__item {
+    margin-bottom: 80px;
+  }
+  .projects__item-img {
+    width: 100%;
+  }
+  .projects__item-description {
+    font-size: 25px;
+    letter-spacing: -0.75px;
+    margin-bottom: 10px;
+  }
+  .projects__item_last-item {
+    margin-bottom: 100px;
+  }
 }
 @media (max-width: 425px) {
-    .projects {
-        padding-left: 12px;
-        padding-right: 12px;
-        margin-bottom: 100px;
-    }
-    .projects__item {
-        margin-bottom: 49px;
-    }
-    .projects__item_last-item {
-        margin-bottom: 60px;
-    }
-    .projects__item-img {
-        height: 250px;
-        margin-bottom: 20px;
-    }
-    .projects__item-description {
-        font-size: 18px;
-        letter-spacing: -0.54px;
-        margin-bottom: 10px;
-    }  
+  .projects {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 100px;
+  }
+  .projects__item {
+    margin-bottom: 49px;
+  }
+  .projects__item_last-item {
+    margin-bottom: 60px;
+  }
+  .projects__item-img {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  .projects__item-description {
+    font-size: 18px;
+    letter-spacing: -0.54px;
+    margin-bottom: 10px;
+  }
 }
