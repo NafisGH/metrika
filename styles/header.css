@@ -202,7 +202,7 @@ a:hover {
   }
   .burger-btn_open {
     top: 20px;
-    right: 15px;
+    right: -90px;
   }
   .nav-burger {
     margin-bottom: 90px;
