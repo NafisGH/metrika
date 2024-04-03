@@ -1,7 +1,10 @@
 .gallery {
 margin-bottom: 150px;
 }
-
+/* .container-gallery {
+  max-width: 1400px;
+  margin: 0 auto;
+} */
 .gallery__content {
   position: relative;
 }
@@ -18,7 +21,6 @@ margin-bottom: 150px;
 
 .gallery__slides {
   height: 717px;
-  /* position: relative; */
 }
 .gallery__slide {
   position: absolute;
@@ -55,11 +57,30 @@ margin-bottom: 150px;
   bottom: 160px;
   left: 115px;
 }
+
+.icon-container {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+
+}
+.icon-container:hover {
+  
+
+}
 .gallery__control-prev,
 .gallery__control-next {
-  width: 35px;
-  height: 50px;
+  fill: white;
+  opacity: 0.5;
+  width: 100%; /* Занимать всю доступную ширину */
+  height: 100%; /* Занимать всю доступную высоту */
+}
+
+.gallery__control-prev:hover,
+.gallery__control-next:hover {
   cursor: pointer;
+  fill: white;
+  opacity: 1;
 }
 
 @media (max-width: 960px) {
