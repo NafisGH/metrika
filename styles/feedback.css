@@ -1,8 +1,7 @@
-.feedback__inner {
-  padding-bottom: 150px;
+.feedback {
+  margin-bottom: 150px;
 }
 .feedback__subtitle {
-  margin-top: 150px;
   margin-bottom: 30px;
 }
 .feedback__row {

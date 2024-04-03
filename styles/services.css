@@ -2,6 +2,7 @@
 
 .services {
   background-color: #121212;
+  margin-bottom: 150px;
 }
 
 .services__subtitle {
@@ -16,7 +17,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 145px;
-  margin-bottom: 170px;
 }
 .services__img-block {
   position: relative;
@@ -26,7 +26,7 @@
 .services__wrapper-img {
   width: 100%;
   height: 100%;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
 
 .services__img {
@@ -59,6 +59,7 @@
   line-height: normal;
   color: #fff;
   border-radius: 5px;
+  margin-top: 170px;
   margin-bottom: 150px;
 }
 .services__order-btn:hover {
@@ -84,7 +85,6 @@
   }
   .services__content {
     row-gap: 129px;
-    margin-bottom: 128px;
   }
   .services__price {
     font-size: 22px;
@@ -93,6 +93,7 @@
     left: 32px;
   }
   .services__order-btn {
+    margin-top: 128px;
     margin-bottom: 120px;
   }
 }
@@ -103,7 +104,6 @@
   }
   .services__content {
     row-gap: 94px;
-    margin-bottom: 93px;
   }
   .services__subtitle {
     font-size: 14px;
@@ -116,7 +116,7 @@
     height: 240px;
   }
   .services__wrapper-img {
-    margin-bottom: 10px;
+    padding-bottom: 10px;
   }
   .services__price {
     font-size: 14px;
@@ -132,6 +132,7 @@
     padding: 36px 0;
     font-size: 22px;
     letter-spacing: -0.66px;
+    margin-top: 93px;
     margin-bottom: 116px;
   }
 }

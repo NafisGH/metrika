@@ -1,6 +1,7 @@
-.gallery__inner {
-  padding-bottom: 150px;
+.gallery {
+margin-bottom: 150px;
 }
+
 .gallery__content {
   position: relative;
 }
@@ -61,12 +62,6 @@
   cursor: pointer;
 }
 
-/* @media (max-width: 1200px) {
-    .gallery__container {
-        width: 100%;
-    }
-} */
-
 @media (max-width: 960px) {
   .gallery__container {
     width: 100%;
@@ -75,9 +70,7 @@
   .gallery__slides {
     height: 536px;
   }
-  .gallery__slide-img {
-    /* height: 100%; */
-  }
+
   .gallery__title {
     font-size: 20px;
     letter-spacing: -0.6px;
