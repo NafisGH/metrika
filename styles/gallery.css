@@ -1,10 +1,10 @@
 .gallery {
 margin-bottom: 150px;
 }
-/* .container-gallery {
+.container-gallery {
   max-width: 1400px;
   margin: 0 auto;
-} */
+}
 .gallery__content {
   position: relative;
 }
@@ -64,10 +64,7 @@ margin-bottom: 150px;
   display: inline-block;
 
 }
-.icon-container:hover {
-  
 
-}
 .gallery__control-prev,
 .gallery__control-next {
   fill: white;
