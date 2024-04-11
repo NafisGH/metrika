@@ -3,13 +3,14 @@
 .services {
   background-color: #121212;
   margin-bottom: 150px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .services__subtitle {
   color: #fff;
   font-size: 18px;
   letter-spacing: -0.54px;
-  padding-top: 150px;
   padding-bottom: 30px;
 }
 .services__content {
@@ -17,22 +18,17 @@
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 145px;
+  margin-bottom: 170px;
 }
 .services__img-block {
   position: relative;
   width: calc(50% - 5px);
   height: 388px;
 }
-.services__wrapper-img {
-  width: 100%;
-  height: 100%;
-  padding-bottom: 25px;
-}
 
 .services__img {
   width: 100%;
   height: 100%;
-  position: relative;
 }
 .services__price {
   padding: 5px 20px;
@@ -49,6 +45,7 @@
   color: #fff;
   font-size: 30px;
   letter-spacing: -0.9px;
+  margin-top: 25px;
 }
 .services__order-btn {
   background: #ad1818;
@@ -59,8 +56,6 @@
   line-height: normal;
   color: #fff;
   border-radius: 5px;
-  margin-top: 170px;
-  margin-bottom: 150px;
 }
 .services__order-btn:hover {
   cursor: pointer;
@@ -78,6 +73,9 @@
 }
 
 @media (max-width: 960px) {
+  .services {
+    padding-bottom: 120px;
+  }
   .services__container {
     width: 100%;
     padding-left: 15px;
@@ -94,10 +92,13 @@
   }
   .services__order-btn {
     margin-top: 128px;
-    margin-bottom: 120px;
   }
 }
 @media (max-width: 425px) {
+  .services {
+    padding-top: 80px;
+    padding-bottom: 116px;
+  }
   .services__container {
     padding-left: 13px;
     padding-right: 13px;
@@ -108,16 +109,13 @@
   .services__subtitle {
     font-size: 14px;
     letter-spacing: -0.42px;
-    padding-top: 80px;
     padding-bottom: 20px;
   }
   .services__img-block {
     width: 100%;
     height: 240px;
   }
-  .services__wrapper-img {
-    padding-bottom: 10px;
-  }
+  
   .services__price {
     font-size: 14px;
     letter-spacing: -0.42px;
@@ -127,12 +125,12 @@
   .services__img-description {
     font-size: 18px;
     letter-spacing: -0.54px;
+    margin-top: 10px;
   }
   .services__order-btn {
     padding: 36px 0;
     font-size: 22px;
     letter-spacing: -0.66px;
     margin-top: 93px;
-    margin-bottom: 116px;
   }
 }

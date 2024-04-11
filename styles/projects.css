@@ -12,23 +12,25 @@
   margin-bottom: 30px;
 }
 
-.projects__wrapper {
+.wrapper-img {
   height: 450px;
   width: 100%;
   margin-bottom: 15px;
 }
-.projects__item-img {
+.wrapper-img__foto {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   flex-shrink: 0;
 }
-.projects__item-description {
+.list-projects__description {
   color: #121212;
   font-size: 30px;
   font-weight: 400;
   letter-spacing: -0.9px;
   margin-bottom: 15px;
 }
-.projects__detail {
+.list-projects__detail {
   color: #ad1818;
   font-family: Manrope;
   font-size: 20px;
@@ -36,7 +38,7 @@
   letter-spacing: -0.6px;
   text-decoration: none;
 }
-.projects__item {
+.list-projects__item {
   margin-bottom: 90px;
 }
 .view_all_project {
@@ -80,18 +82,18 @@
     padding-right: 15px;
     margin-bottom: 100px;
   }
-  .projects__item {
+  .list-projects__item{
     margin-bottom: 80px;
   }
-  .projects__item-img {
+  .wrapper-img__foto {
     width: 100%;
   }
-  .projects__item-description {
+  .list-projects__description {
     font-size: 25px;
     letter-spacing: -0.75px;
     margin-bottom: 10px;
   }
-  .projects__item_last-item {
+  .list-projects__item_last-item {
     margin-bottom: 100px;
   }
 }
@@ -101,17 +103,17 @@
     padding-right: 12px;
     margin-bottom: 100px;
   }
-  .projects__item {
+  .list-projects__item {
     margin-bottom: 49px;
   }
-  .projects__item_last-item {
+  .list-projects__item_last-item {
     margin-bottom: 60px;
   }
-  .projects__item-img {
+  .wrapper-img__foto {
     height: 250px;
     margin-bottom: 20px;
   }
-  .projects__item-description {
+  .list-projects__description {
     font-size: 18px;
     letter-spacing: -0.54px;
     margin-bottom: 10px;

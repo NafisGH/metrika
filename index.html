@@ -11,7 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -79,7 +80,7 @@
         <section class="hero">
             <div class="container">
                 <h1>Современные и стильные интерьеры для комфортной жизни</h1>
-                <div class="hero__wrapper-img">
+                <div class="hero__wrapper">
                     <img class="hero__img" src="./resources/img/img-about-us.png" alt="">
                     <p>Мы - команда квалифицированных дизайнеров и архитекторов, занимающихся разработкой и реализацией
                         дизайн-проектов</p>
@@ -95,34 +96,34 @@
                     Находим
                     конструктивные решения для каждого интерьера, вплоть до каждой детали — нацелены на результат.
                 </p>
-                <button class="about__services-btn">Посмотреть услуги</button>
+                <button class="about__btn">Посмотреть услуги</button>
             </div>
         </section>
 
         <section class="projects">
             <div class="container">
-                <ul>
-                    <li class="projects__item">
+                <ul class="list-projects">
+                    <li class="list-projects__item">
                         <h2 id="projects" class="projects__subtitle">проекты</h2>
-                        <div class="projects__wrapper">
-                            <img class="projects__item-img" src="resources/img/Rectangle 6.jpg" alt="">
+                        <div class="wrapper-img">
+                            <img class="wrapper-img__foto" src="resources/img/Rectangle 6.jpg" alt="">
                         </div>
-                        <h3 class="projects__item-description">ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</h3>
-                        <a href="#" class="projects__detail">Подробнее →</a>
+                        <h3 class="list-projects__description">ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</h3>
+                        <a href="#" class="list-projects__detail">Подробнее →</a>
                     </li>
-                    <li class="projects__item">
-                        <div class="projects__wrapper">
-                            <img class="projects__item-img" src="resources/img/Rectangle 7.jpg" alt="">
+                    <li class="list-projects__item">
+                        <div class="wrapper-img">
+                            <img class="wrapper-img__foto" src="resources/img/Rectangle 7.jpg" alt="">
                         </div>
-                        <h3 class="projects__item-description">ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023</h3>
-                        <a href="#" class="projects__detail">Подробнее →</a>
+                        <h3 class="list-projects__description">ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023</h3>
+                        <a href="#" class="list-projects__detail">Подробнее →</a>
                     </li>
-                    <li class="projects__item projects__item_last-item">
-                        <div class="projects__wrapper">
-                            <img class="projects__item-img" src="resources/img/Rectangle 8.jpg" alt="">
+                    <li class="list-projects__item list-projects__item_last-item">
+                        <div class="wrapper-img">
+                            <img class="wrapper-img__foto" src="resources/img/Rectangle 8.jpg" alt="">
                         </div>
-                        <h3 class="projects__item-description">ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022</h3>
-                        <a href="#" class="projects__detail">Подробнее →</a>
+                        <h3 class="list-projects__description">ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022</h3>
+                        <a href="#" class="list-projects__detail">Подробнее →</a>
                     </li>
                     <button class="projects__btn">Смотреть все проекты</button>
                 </ul>
@@ -134,31 +135,23 @@
 
                 <h2 id="services" class="services__subtitle">Услуги</h2>
                 <ul class="services__content">
-                    <li class="services__img-block services__img_plan">
-                        <div class="services__wrapper-img">
-                            <img class="services__img" src="resources/img/Rectangle 2.jpg">
-                        </div>
+                    <li class="services__img-block">
+                        <img class="services__img" src="resources/img/Rectangle 2.jpg">
                         <p class="services__price">от 2500₽/м²</p>
                         <p class="services__img-description">Планировочное решение</p>
                     </li>
-                    <li class="services__img-block services__img_desine">
-                        <div class="services__wrapper-img">
-                            <img class="services__img" src="resources/img/Rectangle 3.jpg">
-                        </div>
+                    <li class="services__img-block">
+                        <img class="services__img" src="resources/img/Rectangle 3.jpg">
                         <p class="services__price">от 3000₽/м²</p>
                         <p class="services__img-description">Дизайн-проект</p>
                     </li>
-                    <li class="services__img-block services__img_supervision">
-                        <div class="services__wrapper-img">
-                            <img class="services__img" src="resources/img/Rectangle 4.jpg">
-                        </div>
+                    <li class="services__img-block">
+                        <img class="services__img" src="resources/img/Rectangle 4.jpg">
                         <p class="services__price">от 30 000₽/мес</p>
                         <p class="services__img-description">Авторский надзор</p>
                     </li>
-                    <li class="services__img-block services__img_complete_set">
-                        <div class="services__wrapper-img">
-                            <img class="services__img" src="resources/img/Rectangle 5.jpg">
-                        </div>
+                    <li class="services__img-block">
+                        <img class="services__img" src="resources/img/Rectangle 5.jpg">
                         <p class="services__price">5% от стоимости</p>
                         <p class="services__img-description">Комплектация</p>
                     </li>
@@ -253,11 +246,17 @@
                             <div class="gallery__controls">
                                 <div class="icon-container">
                                     <!-- <img class="gallery__control-prev" src="/resources/img/arrow_back_ios_FILL0_wght400_GRAD0_opsz24.svg" alt="" > -->
-                                    <svg class="gallery__control-prev" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z"/></svg>
+                                    <svg class="gallery__control-prev" xmlns="http://www.w3.org/2000/svg" height="24"
+                                        viewBox="0 -960 960 960" width="24">
+                                        <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+                                    </svg>
                                 </div>
                                 <div class="icon-container">
                                     <!-- <img class="gallery__control-next" src="/resources/img/arrow_forward_ios_FILL0_wght400_GRAD0_opsz24.svg" alt=""> -->
-                                    <svg class="gallery__control-next" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
+                                    <svg class="gallery__control-next" xmlns="http://www.w3.org/2000/svg" height="24"
+                                        viewBox="0 -960 960 960" width="24">
+                                        <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                                    </svg>
                                 </div>
                             </div>
                         </div>

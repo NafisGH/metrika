@@ -8,13 +8,14 @@
   margin-bottom: 30px;
 }
 .about__paragraf {
+  width: 1048px;
   color: #121212;
   font-size: 45px;
   margin-bottom: 30px;
   line-height: normal;
   letter-spacing: -1.35px;
 }
-.about__services-btn {
+.about__btn {
   border-radius: 5px;
   background: #ad1818;
   border: none;
@@ -22,7 +23,7 @@
   font-size: 20px;
   padding: 20px 40px;
 }
-.about__services-btn:hover {
+.about__btn:hover {
   cursor: pointer;
   opacity: 0.5;
 }
@@ -100,7 +101,7 @@
     font-size: 22px;
     letter-spacing: -0.66px;
   }
-  .about__services-btn {
+  .about__btn {
     border-radius: 5px;
     background: #ad1818;
     border: none;
