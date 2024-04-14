@@ -13,8 +13,8 @@
 }
 
 .wrapper-img {
-  height: 450px;
   width: 100%;
+  height: 450px;
   margin-bottom: 15px;
 }
 .wrapper-img__foto {
@@ -85,6 +85,7 @@
   .list-projects__item{
     margin-bottom: 80px;
   }
+ 
   .wrapper-img__foto {
     width: 100%;
   }
@@ -109,8 +110,11 @@
   .list-projects__item_last-item {
     margin-bottom: 60px;
   }
-  .wrapper-img__foto {
+  .wrapper-img {
+    width: 350px;
     height: 250px;
+  }
+  .wrapper-img__foto {
     margin-bottom: 20px;
   }
   .list-projects__description {
