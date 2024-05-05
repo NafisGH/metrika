@@ -84,6 +84,7 @@
   }
   .services__content {
     row-gap: 129px;
+    margin-bottom: 128px;
   }
   .services__price {
     font-size: 22px;
@@ -91,14 +92,12 @@
     top: 31px;
     left: 32px;
   }
-  .services__order-btn {
-    margin-top: 128px;
-  }
+ 
 }
 @media (max-width: 425px) {
   .services {
     padding-top: 80px;
-    padding-bottom: 116px;
+    padding-bottom: 80px;
   }
   .services__container {
     padding-left: 13px;
@@ -106,6 +105,7 @@
   }
   .services__content {
     row-gap: 94px;
+    margin-bottom: 93px;
   }
   .services__subtitle {
     font-size: 14px;
@@ -132,6 +132,6 @@
     padding: 36px 0;
     font-size: 22px;
     letter-spacing: -0.66px;
-    margin-top: 93px;
+
   }
 }

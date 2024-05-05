@@ -5,7 +5,8 @@ const BODY_FIXED_CLASSNAME_burger = 'body_fixed';
 const bodyNode_burger = document.querySelector('body');
 const burgerNode = document.querySelector('.js-burger');
 const burgerBtnNode = document.querySelector('.js-burger-btn');
-const burgerContentNode = document.querySelector('.js-burger__content')
+const burgerContentNode = document.querySelector('.js-burger__content');
+const navBurger = document.querySelector(".nav-burger");
 
 burgerBtnNode.addEventListener('click', toggleBurger);
 
@@ -26,3 +27,10 @@ function toggleBurger() {
     const newImageSrc = isOpened ? './resources/img/close-popup.svg' : './resources/img/burger-btn.svg';
     burgerBtnNode.src = newImageSrc;
 }
+
+navBurger.addEventListener("click", (event) => {
+    if (event.target.tagName = 'a') {
+        toggleBurger()
+        
+    }
+})

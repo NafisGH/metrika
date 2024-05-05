@@ -18,20 +18,20 @@
 
 <body>
 
-    <div class="js-popup popup ">
-        <div class="js-popup__content popup__content">
+    <div class="popup js-popup">
+        <form id="popupForm" action="/submit" method="post" class="popup__content js-popup__content">
             <p class="popup__title">Заказать услугу</p>
             <p class="popup__subtitle">Заполните форму, мы свяжемся с вами в течение суток</p>
             <div class="popup__input-wrapper">
-                <input type="text" placeholder="Имя">
-                <input type="email" placeholder="Электронная почта">
-                <input type="tel" placeholder="Номер телефона">
-                <div class="btn_submit_wrapper">
-                    <button class="btn_submit">Отправить</button>
-                </div>
+                <input type="text" class="popup__input" placeholder="Имя">
+                <input type="email" class="popup__input" placeholder="Электронная почта">
+                <input type="tel" class="popup__input" placeholder="Номер телефона">
             </div>
-            <div class="js-popup__close-btn popup__close-btn "><img src="./resources/img/close-popup.svg" alt=""></div>
-        </div>
+                <button type="submit" class="popup__submit-btn">Отправить</button>
+            <div class="popup__close-btn js-popup__close-btn">
+                <img src="./resources/img/close-popup.svg">
+            </div>
+        </form>
     </div>
 
     <header class="header">
