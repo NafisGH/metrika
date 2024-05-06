@@ -28,9 +28,6 @@
   padding: 15px;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s ease;
@@ -40,13 +37,14 @@
   visibility: visible;
 }
 .popup__content {
-  position: relative;
-  width: 777px;
-  max-height: 100%;
-  overflow-y: scroll;
-  border-radius: 10px;
-  background-color: #fff;
-  padding: 0 79px 0 55px;
+   position: relative;
+   max-width: 777px;
+   max-height: 100%;
+   margin: 0 auto;
+   overflow-y: scroll;
+   border-radius: 10px;
+   background-color: #fff;
+   padding: 94px 79px 86px 55px; 
 }
 .popup__title {
   color: #000;
@@ -55,7 +53,6 @@
   line-height: 70px;
   font-weight: 400;
   letter-spacing: -1.35px;
-  margin-top: 94px;
   margin-bottom: 4px;
 }
 .popup__subtitle {
@@ -97,13 +94,12 @@
 .popup__submit-btn {
   background: #ad1818;
   padding: 20px 40px;
-  width: 644px;
+  width: 100%;
   font-size: 20px;
   letter-spacing: -0.6px;
   color: #fff;
   border-radius: 5px;
   margin-top: 80px;
-  margin-bottom: 86px;
 }
 .popup__submit-btn:hover {
   cursor: pointer;
@@ -115,13 +111,12 @@
 @media (max-width: 425px) {
   .popup__content {
     width: 100%;
-    padding: 0 16px 0 24px;
+    padding: 80px 16px 80px 24px;
   }
   .popup__title {
     font-size: 25px;
     letter-spacing: -0.75px;
     line-height: normal;
-    margin-top: 80px;
     margin-bottom: 11px;
   }
   .popup__subtitle {
@@ -139,10 +134,6 @@
     height: 30px;
   }
 
-  /* .popup__input-wrapper {
-        width: 100%;
-        margin: 0 auto;
-    } */
   .popup__input-wrapper input {
     width: 100%;
     font-size: 18px;
@@ -151,6 +142,5 @@
   .popup__submit-btn {
     width: 100%;
     margin-top: 60px;
-    margin-bottom: 80px;
   }
 }
